@@ -1,3 +1,4 @@
+// Uses destructuring to unpack the dependencies needed from mongoose
 const { connect, connection } = require('mongoose');
 
 const connectionString =
