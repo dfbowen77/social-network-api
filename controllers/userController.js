@@ -1,9 +1,8 @@
 // import the destructured user model
 const { User } = require('../models');
 
-// Creates the User Controller for handling myriad user routes
-
-const UserController = {
+// Exports the myriad user routes
+module.exports = {
     // Get all Users
     async getUsers(req, res) {
         try {
@@ -109,6 +108,3 @@ const UserController = {
       },
 
 }
-
-// Exports the User Controller for use elsewhere within the application
-module.export = UserController

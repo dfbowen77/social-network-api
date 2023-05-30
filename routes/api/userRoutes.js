@@ -10,7 +10,9 @@ const {
   deleteUser,
   addFriend,
   removeFriend,
-} = require('../../controllers/userController.js');
+} = require('../../controllers/userController');
+
+console.log("test:" + getUsers)
 
 // sets up the endpoint for retreiving and adding users
 router.route('/').get(getUsers).post(createUser);
