@@ -1,8 +1,8 @@
 // import the destructured thought, user, and reaction models
 const { Thought, User, Reaction } = require('../models');
 
-// Creates the Thought Controller for handling myriad thought routes
-const ThoughtController = {
+// Exports the myriad thought routes
+module.exports = {
     // Get all thoughts
     async getThoughts(req, res) {
         try {
@@ -100,6 +100,3 @@ const ThoughtController = {
         }
     },
 }
-
-// Exports the Thought Controller for use elsewhere within the application
-module.export = ThoughtController

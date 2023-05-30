@@ -1,6 +1,9 @@
 // Uses destructuring to unpack the dependencies needed from mongoose
 const { Schema, model, Types } = require('mongoose');
 
+// The reactionSchema needs to be imported in order to interact with the thoughtSchema
+const reactionSchema = require('./Reaction');
+
 // Defines the thought schema
 const thoughtSchema = new Schema(
     {
