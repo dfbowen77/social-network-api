@@ -19,10 +19,10 @@ router.route('/').get(getThoughts).post(createThought);
 router.route('/:thoughtId').get(getSingleThought).put(updateThought).delete(deleteThought);
 
 // sets up the endpoints for adding reactions
-router.route('/:thoughtID/reactions').post(addReaction)
+router.route('/:thoughtId/reactions').post(addReaction)
 
 // sets up the endpoints for deleting reactions
-router.route('/:thoughtID/reactions/:reactionID').delete(removeReaction)
+router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction)
 
 // Exports the router for use elsewhere in the application
 module.exports = router;

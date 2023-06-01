@@ -20,8 +20,8 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // The purpose of the following code is to use a getter to transform the date data that is stored in MongoDB into something that is more easily readable by a person. 
-            get: timestamp => new Date(timestamp).toLocaleTimeString(),
+            // The purpose of the following code is to use a getter to transform the date data that is stored in MongoDB into something that is more easily readable by a person. The toLocaleString() returns the date as well as the time.
+            get: timestamp => new Date(timestamp).toLocaleString(),
         },
     },
         {
