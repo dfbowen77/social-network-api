@@ -21,7 +21,7 @@ router.route('/').get(getUsers).post(createUser);
 router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
 
 // sets up the endpoints for adding and deleting friends
-router.route('.:userID/friends/:friendID').post(addFriend).delete(removeFriend)
+router.route('/:userId/friends/:friendId').post(addFriend).delete(removeFriend)
 
 // Exports the router for use elsewhere in the application
 module.exports = router;
